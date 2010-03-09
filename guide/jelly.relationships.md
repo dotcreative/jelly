@@ -42,14 +42,14 @@ context of another.
 		public static function initialize($meta)
 		{
 			$meta->fields(array(
-				'editor' => new Field_BelongsTo(
+				'editor' => new Field_BelongsTo(array(
 					// We can specify the foreign connection to ours
 					'foreign' => 'editor.id',
 
 					// Since BelongsTo has a column in the table, we can specify that
 					// However, this would default to editor_id anyway.
 					'column' => 'editor_id',
-				),
+				)),
 				'posts' => new Field_HasMany(array(
 					// If not set, this would default to post.author:foreign_key
 					// And would expand in the query builder to posts.author_id
