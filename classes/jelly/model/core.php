@@ -4,7 +4,7 @@
  * Jelly_Model is the class all models must extend. It handles
  * various CRUD operations and relationships to other models.
  * 
- * @package Jelly
+ * @package  Jelly
  */
 abstract class Jelly_Model_Core
 {
@@ -655,7 +655,7 @@ abstract class Jelly_Model_Core
 
 	/**
 	 * Returns a view object that represents the field.
-	 * 
+	 *
 	 * If $prefix is an array, it will be used for the data
 	 * and $prefix will be set to the default.
 	 *

@@ -5,7 +5,7 @@
  *
  * It offers a few special features that make it useful:
  *
- *  * Only one model is instantiated for the whole result set, which 
+ *  * Only one model is instantiated for the whole result set, which
  *    is significantly faster in terms of performance.
  *  * It is easily extensible, so things like polymorphism and
  *    recursive result sets can be easily implemented.
@@ -20,7 +20,7 @@ class Jelly_Collection_Core implements Iterator, Countable, SeekableIterator, Ar
 {
 	/**
 	 * @var  Jelly  The current model we're placing results into
-	 * 
+	 *
 	 */
 	protected $_model = NULL;
 
@@ -88,6 +88,7 @@ class Jelly_Collection_Core implements Iterator, Countable, SeekableIterator, Ar
 
 	/**
 	 * Implementation of the Iterator interface
+	 *
 	 * @return  $this
 	 */
 	public function rewind()
@@ -98,6 +99,7 @@ class Jelly_Collection_Core implements Iterator, Countable, SeekableIterator, Ar
 
 	/**
 	 * Implementation of the Iterator interface
+	 *
 	 * @return  Jelly
 	 */
     public function current($object = TRUE)
@@ -118,6 +120,7 @@ class Jelly_Collection_Core implements Iterator, Countable, SeekableIterator, Ar
 
 	/**
 	 * Implementation of the Iterator interface
+	 *
 	 * @return  int
 	 */
 	public function key()
@@ -127,6 +130,7 @@ class Jelly_Collection_Core implements Iterator, Countable, SeekableIterator, Ar
 
 	/**
 	 * Implementation of the Iterator interface
+	 *
 	 * @return  $this
 	 */
 	public function next()
@@ -137,6 +141,7 @@ class Jelly_Collection_Core implements Iterator, Countable, SeekableIterator, Ar
 
 	/**
 	 * Implementation of the Iterator interface
+	 *
 	 * @return  boolean
 	 */
 	public function valid()
@@ -146,6 +151,7 @@ class Jelly_Collection_Core implements Iterator, Countable, SeekableIterator, Ar
 
 	/**
 	 * Implementation of the Countable interface
+	 *
 	 * @return  boolean
 	 */
 	public function count()
@@ -203,7 +209,7 @@ class Jelly_Collection_Core implements Iterator, Countable, SeekableIterator, Ar
 	/**
 	 * Loads values into the model.
 	 *
-	 * @param   array $values
+	 * @param   array  $values
 	 * @return  Jelly_Model|array
 	 */
 	protected function _load($values, $object)

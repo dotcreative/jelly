@@ -8,14 +8,14 @@
 abstract class Jelly_Field_Enum extends Jelly_Field
 {
 	/**
-	 * @var array An array of valid choices
+	 * @var  array  An array of valid choices
 	 */
 	public $choices = array();
 
 	/**
 	 * Ensures there is a choices array set
 	 *
-	 * @param  array $options
+	 * @param  array  $options
 	 */
 	public function __construct($options = array())
 	{

@@ -59,7 +59,7 @@ abstract class Jelly_Builder_Core extends Kohana_Database_Query_Builder_Select
 	 * $model is not actually allowed to be NULL. It has
 	 * a default because PHP throws strict errors otherwise.
 	 *
-	 * @param string $model
+	 * @param  string  $model
 	 */
 	public function __construct($model = NULL, $type = NULL)
 	{
@@ -137,7 +137,7 @@ abstract class Jelly_Builder_Core extends Kohana_Database_Query_Builder_Select
 	/**
 	 * Compiles the builder into a usable expression
 	 *
-	 * @param   Database $db
+	 * @param   Database  $db
 	 * @return  Database_Query
 	 */
 	public function compile(Database $db)
@@ -166,7 +166,7 @@ abstract class Jelly_Builder_Core extends Kohana_Database_Query_Builder_Select
 	 * Returns the current query limited to 1 and
 	 * executed, if it is a Database::SELECT.
 	 *
-	 * @param  mixed $key 
+	 * @param  mixed  $key
 	 * @return Jelly_Model
 	 */
 	public function load($key = NULL)
@@ -188,8 +188,8 @@ abstract class Jelly_Builder_Core extends Kohana_Database_Query_Builder_Select
 	 * Returns the unique key for a specific value. This method is expected
 	 * to be overloaded in builders if the table has other unique columns.
 	 *
-	 * @param  mixed  $value
-	 * @return string
+	 * @param   mixed  $value
+	 * @return  string
 	 */
 	public function unique_key($value)
 	{
@@ -607,7 +607,7 @@ abstract class Jelly_Builder_Core extends Kohana_Database_Query_Builder_Select
 	/**
 	 * This is an internal method used for aliasing only things coming
 	 * to the query builder, since they can come in so many formats.
-	 * 
+	 *
 	 * $value is passed so the :unique_key meta alias can be used.
 	 *
 	 * @param   string   $field

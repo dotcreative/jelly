@@ -4,7 +4,7 @@ Jelly supports standard 1:1, 1:many and many:many relationships through special 
 
 ### Defining Relationships
 
-Relationships are defined by fields. The standard relationships in Jelly use 
+Relationships are defined by fields. The standard relationships in Jelly use
 `Field_BelongsTo`, `Field_HasOne`, `Field_HasMany` and `Field_ManyToMany` for this.
 
 Since Jelly supports top-to-bottom aliasing, all relationship fields can

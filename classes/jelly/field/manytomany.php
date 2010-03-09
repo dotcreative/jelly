@@ -74,7 +74,7 @@ implements Jelly_Field_Behavior_Saveable, Jelly_Field_Behavior_Haveable, Jelly_F
 
 		// Create an array from them
 		$this->foreign = array(
-			'model' => $foreign[0],
+			'model'  => $foreign[0],
 			'column' => $foreign[1],
 		);
 
@@ -98,7 +98,7 @@ implements Jelly_Field_Behavior_Saveable, Jelly_Field_Behavior_Haveable, Jelly_F
 			}
 
 			$this->through = array(
-				'model' => $this->through,
+				'model'   => $this->through,
 				'columns' => array(
 					inflector::singular($model).':foreign_key',
 					inflector::singular($this->foreign['model']).':foreign_key',
@@ -174,9 +174,9 @@ implements Jelly_Field_Behavior_Saveable, Jelly_Field_Behavior_Haveable, Jelly_F
 			foreach ($new as $new_id)
 			{
 				Jelly::insert($this->through['model'])
-					 ->columns($this->through['columns'])
-					 ->values(array($model->id(), $new_id))
-					 ->execute(Jelly::meta($model)->db());
+					->columns($this->through['columns'])
+					->values(array($model->id(), $new_id))
+					->execute(Jelly::meta($model)->db());
 			}
 		}
 	}

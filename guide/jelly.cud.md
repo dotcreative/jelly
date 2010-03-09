@@ -7,7 +7,7 @@ save and delete a record.
 
 Both creation and updating is achieved with the `save()` method. Keep in mind
 that `save()` may throw a `Validate_Exception` if your model doesn't validate
-according to the rules you specify, so you should always test for this. Having said that, 
+according to the rules you specify, so you should always test for this. Having said that,
 we won't here just for clarity.
 
 ##### Example - Creating a new record
@@ -60,6 +60,5 @@ method on a model. The number of affected rows (1 or 0) will be returned.
 
 	// Notice we specify a unique_key for delete()
 	Model::factory('post')->delete($id);
-
 
 ## Next [Accessing and managing relationships](jelly.relationships)

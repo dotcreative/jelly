@@ -15,6 +15,6 @@ abstract class Jelly_Field_Integer extends Jelly_Field
 	 */
 	public function set($value)
 	{
-		return (int)$value;
+		return (int) $value;
 	}
 }

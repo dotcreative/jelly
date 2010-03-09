@@ -8,7 +8,7 @@
 abstract class Jelly_Field_Float extends Jelly_Field
 {
 	/**
-	 * @var int The number of places to round the number, NULL to forgo rounding
+	 * @var  int  The number of places to round the number, NULL to forgo rounding
 	 */
 	public $places = NULL;
 
@@ -20,7 +20,7 @@ abstract class Jelly_Field_Float extends Jelly_Field
 	 */
 	public function set($value)
 	{
-		$value = (float)$value;
+		$value = (float) $value;
 		
 		if ($this->places !== NULL)
 		{

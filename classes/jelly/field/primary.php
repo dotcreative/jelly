@@ -24,11 +24,11 @@ abstract class Jelly_Field_Primary extends Jelly_Field
 		{
 			if (is_numeric($value))
 			{
-				return (int)$value;
+				return (int) $value;
 			}
 			else
 			{
-				return (string)$value;
+				return (string) $value;
 			}
 		}
 		else

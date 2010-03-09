@@ -4,7 +4,7 @@ Jelly is a nice little ORM for Kohana. It is currently in beta.
  * [View the API reference](http://jelly.jonathan-geiger.com/docs/api/Jelly)
  * [Report an issue or feature request](http://github.com/jonathangeiger/kohana-jelly/issues)
  * [Run the unit tests](http://github.com/jonathangeiger/jelly-tests)
- 
+
 ## Notable Features
 
 * **Standard support for all of the common relationships** — This includes

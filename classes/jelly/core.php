@@ -3,6 +3,8 @@
 /**
  * This core class is the main interface to all
  * models, builders, and meta data.
+ *
+ * @package  Jelly
  */
 abstract class Jelly_Core
 {
@@ -26,7 +28,7 @@ abstract class Jelly_Core
 	 * The model is then considered to be loaded.
 	 *
 	 * @param   mixed  $model
-	 * @param   mixed  $key
+	 * @param   mixed  $values
 	 * @return  Jelly
 	 */
 	public static function factory($model, $values = NULL)
@@ -54,7 +56,7 @@ abstract class Jelly_Core
 	 *          ->execute();
 	 *
 	 * @param   string  $model
-	 * @param   mixed   $cond
+	 * @param   mixed   $key
 	 * @return  Jelly_Builder
 	 */
 	public static function select($model, $key = NULL)
@@ -105,7 +107,7 @@ abstract class Jelly_Core
 	 * While you will generally want to use models for deleting single records,
 	 * this method remains useful for deleting multiple rows all at once.
 	 *
-	 * @param  string $model 
+	 * @param  string  $model
 	 * @return Jelly_Builder
 	 */
 	public static function delete($model)
@@ -238,6 +240,7 @@ abstract class Jelly_Core
 	 * Returns FALSE on failure.
 	 *
 	 * @param   string  $field
+	 * @param   mixed   $value
 	 * @return  array
 	 */
 	public static function alias($field, $value = NULL)

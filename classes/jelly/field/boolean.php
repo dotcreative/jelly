@@ -6,7 +6,7 @@
  * @package  Jelly
  */
 abstract class Jelly_Field_Boolean extends Jelly_Field
-{	
+{
 	/**
 	 * @var  mixed  How TRUE is represented in the database
 	 */
@@ -18,7 +18,7 @@ abstract class Jelly_Field_Boolean extends Jelly_Field
 	public $label_true = "Yes";
 
 	/**
-	 * @var mixed How FALSE is represented in the database
+	 * @var  mixed  How FALSE is represented in the database
 	 */
 	public $false = 0;
 

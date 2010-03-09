@@ -12,7 +12,7 @@ abstract class Jelly_Field_Serialized extends Jelly_Field
 	 *
 	 * Incoming data that isn't actually serialized will not be harmed.
 	 *
-	 * @param   mixed  $value 
+	 * @param   mixed  $value
 	 * @return  mixed
 	 */
 	public function set($value)

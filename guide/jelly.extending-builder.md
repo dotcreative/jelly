@@ -23,7 +23,7 @@ named in such a way, it will always return that instead of the default
 
 You can now add any listing logic you like to your query building. You can
 even change the default query builder behavior to account for quirks in a
-particular model. 
+particular model.
 
 Our active users example before is solved thus:
 

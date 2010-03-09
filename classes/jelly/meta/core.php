@@ -3,7 +3,7 @@
 /**
  * Jelly_Meta objects act as a registry of information about a particular model.
  *
- * @package Jelly
+ * @package  Jelly
  */
 abstract class Jelly_Meta_Core
 {
@@ -193,6 +193,7 @@ abstract class Jelly_Meta_Core
 	 * Allows dynamic setting of members when initializing
 	 *
 	 * @param   string  $key
+	 * @param   string  $value
 	 * @return  void
 	 */
 	public function __set($key, $value)
@@ -229,6 +230,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Gets or sets the db group
+	 *
 	 * @param   string  $value
 	 * @return  string|$this
 	 */
@@ -244,6 +246,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Returns the model name this object is attached to
+	 *
 	 * @return  string
 	 */
 	public function model()
@@ -252,7 +255,8 @@ abstract class Jelly_Meta_Core
 	}
 
 	/**
-	 * Gets or sets the table 
+	 * Gets or sets the table
+	 *
 	 * @param   string  $value
 	 * @return  string|$this
 	 */
@@ -268,6 +272,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Gets or sets the builder attached to this object
+	 *
 	 * @param   string  $value
 	 * @return  string|$this
 	 */
@@ -386,6 +391,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Gets or sets the model's primary key.
+	 *
 	 * @param   string  $value
 	 * @return  mixed
 	 */
@@ -401,6 +407,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Gets or sets the model's name key
+	 *
 	 * @param   string  $value
 	 * @return  string
 	 */
@@ -416,6 +423,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Gets or sets the model's foreign key
+	 *
 	 * @param   string  $value
 	 * @return  string
 	 */
@@ -431,6 +439,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Gets or sets the object's sorting properties
+	 *
 	 * @param   array  $value
 	 * @return  array
 	 */
@@ -446,6 +455,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Gets or sets the object's load_with properties
+	 *
 	 * @param   array  $value
 	 * @return  array
 	 */
@@ -461,6 +471,7 @@ abstract class Jelly_Meta_Core
 
 	/**
 	 * Gets or sets the object's input prefix
+	 *
 	 * @param   string  $value
 	 * @return  string
 	 */

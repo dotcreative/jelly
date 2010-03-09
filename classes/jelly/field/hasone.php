@@ -103,6 +103,7 @@ abstract class Jelly_Field_HasOne extends Jelly_Field_HasMany implements Jelly_F
 	public function input($prefix = 'jelly/field', $data = array())
 	{
 		$data['id'] = $this->get($data['model'], NULL)->load()->id();
+
 		return parent::input($prefix, $data);
 	}
 
